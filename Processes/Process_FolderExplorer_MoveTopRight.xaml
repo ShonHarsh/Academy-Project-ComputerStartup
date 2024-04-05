@@ -1,0 +1,216 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Process_FolderExplorer_MoveTopRight" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_StrFolderPath" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:Process_FolderExplorer_MoveTopRight.in_StrFolderPath>
+    <InArgument x:TypeArguments="x:String">
+      <Literal x:TypeArguments="x:String" Value="" />
+    </InArgument>
+  </this:Process_FolderExplorer_MoveTopRight.in_StrFolderPath>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1099,2131</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Process_FolderExplorer_MoveTopRight_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Process_FolderExplorer_MoveTopRight" sap:VirtualizedContainerService.HintSize="608,2066" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="intWindowWidth" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="intWindowsHeight" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="intOffsetX" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message Academy-Project-ComputerStartup.Process_FolderExplorer_MoveTopRight.Begin;" sap:VirtualizedContainerService.HintSize="546,181" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Academy-Project-ComputerStartup.Process_FolderExplorer_MoveTopRight.Begin;&quot;]" />
+    <Sequence DisplayName="Sequence Initialization" sap:VirtualizedContainerService.HintSize="546,978" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Boolean" Default="False" Name="boolExistsFolderPath" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:MultipleAssign DisplayName="Multiple Assign Initialization" sap:VirtualizedContainerService.HintSize="479,218" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+        <ui:MultipleAssign.AssignOperations>
+          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:Int32">[intOffsetX]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:Int32">-1292</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:Int32">[intWindowsHeight]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:Int32">1000</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:Int32">[intWindowWidth]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:Int32">1300</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+          </scg:List>
+        </ui:MultipleAssign.AssignOperations>
+      </ui:MultipleAssign>
+      <ui:FolderExistsX DisplayName="Folder Exists Folder Path" Exists="[boolExistsFolderPath]" sap:VirtualizedContainerService.HintSize="479,173" sap2010:WorkflowViewState.IdRef="FolderExistsX_1" Path="[in_StrFolderPath]" />
+      <If Condition="[boolExistsFolderPath = False]" DisplayName="If Exists Folder Path" sap:VirtualizedContainerService.HintSize="479,459" sap2010:WorkflowViewState.IdRef="If_1">
+        <If.Then>
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Throw DisplayName="Throw " Exception="[New SystemException(&quot;Academy-Project-ComputerStartup.Process_FolderExplorer_MoveTopRight.Exception.FolderPath; The folder path was not found.  Folder Path: &quot; + in_StrFolderPath)]" sap:VirtualizedContainerService.HintSize="354,113" sap2010:WorkflowViewState.IdRef="Throw_1" />
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </If.Else>
+      </If>
+    </Sequence>
+    <Sequence DisplayName="Sequence Operation" sap:VirtualizedContainerService.HintSize="546,646" sap2010:WorkflowViewState.IdRef="Sequence_7">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="ui:UiElement" Default="[New UiElement]" Name="elementOutput" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: This PC" sap:VirtualizedContainerService.HintSize="483,518" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" OutUiElement="[elementOutput]" ScopeGuid="247b23f6-15e3-4f94-b1f4-1e4dc3935d43" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do Window Move" sap:VirtualizedContainerService.HintSize="449,204" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:MoveWindow sap2010:Annotation.AnnotationText="-intWindowWidth is the mathematical answer however the window is not moved completely to the side and so the offset is nudged." DisplayName="Move Window Move" Height="[intWindowsHeight]" sap:VirtualizedContainerService.HintSize="387.2,116.8" sap2010:WorkflowViewState.IdRef="MoveWindow_2" Width="[intWindowWidth]" Window="[elementOutput]" X="[intOffsetX]" Y="0">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:MoveWindow>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-1306, 0, 1310, 968" Arguments="[in_StrFolderPath]" FilePath="C:\Windows\explorer.exe" IconBase64="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" InformativeScreenshot="e3df7c2324689eba802b63aa0ee649e4.png" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='This PC' /&gt;" Title="C:\Alpha Shon\Repos" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+    <ui:LogMessage DisplayName="Log Message Academy-Project-ComputerStartup.Process_FolderExplorer_MoveTopRight.End;" sap:VirtualizedContainerService.HintSize="545.6,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Academy-Project-ComputerStartup.Process_FolderExplorer_MoveTopRight.End;&quot;]" />
+  </Sequence>
+</Activity>

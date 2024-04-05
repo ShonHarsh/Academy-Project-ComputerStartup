@@ -1,0 +1,96 @@
+{
+  "name": "Academy-Project-ComputerStartup",
+  "projectId": "8efa410d-79c6-4b61-ab75-951bdbd5c3b3",
+  "description": "A bot to start processes on a computer.",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.System.Activities": "[24.3.0]",
+    "UiPath.Testing.Activities": "[24.2.0-preview]",
+    "UiPath.UIAutomation.Activities": "[24.2.2-preview]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.4.2.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d2da9e15-4044-42bb-8ed7-544f691e9898",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Processes\\Test_Process_FolderExplorer.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d62b2d2d-efc7-44ca-9e5e-642841353bd2",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Processes\\Test_Process_FolderExplorer_MoveTopRight.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "86dcb9dd-72a6-4e83-aa5d-9c150d8190f0",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Processes\\Test_Process_FolderExplorer_MoveBottomRight.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1899deae-a01b-4c48-ab35-3117550eb011",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\File\\Test_File_FolderCopy_RepoUiPath.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0e9c5427-dacb-4e91-af21-edc11293bf29",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Processes\\Test_Process_Encompass.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "ba82e7f4-f0fd-4f92-afed-4e11fc01a528",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
