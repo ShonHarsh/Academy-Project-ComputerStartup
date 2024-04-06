@@ -1,14 +1,14 @@
 ![Academy](https://shonharsh.github.io/curriculum-vitae/images/banner-academy-mortgage.png)
 
-# ACADEMY-PROJECT-COMPUTERSTARTUP
+# Academy-Project-ComputerStartup
 
 The Academy-Project-ComputerStartup robot is used to perform actions such as opening programs and file explorers on my computer startup.  This project is supporting my work at  Academy Mortgage.
 
-### GETTING STARTED
+### Getting Started
 
 After making a pull request or downloading the project, open the Main.xaml in UiPath Studio.  The robot can be run with the play button in the ribbon and the result can be seen in output panel.
 
-### DETAILS
+### Details
 
 This robot sets up the day's workspace.
 
@@ -32,19 +32,19 @@ This robot sets up the day's workspace.
 1. Test_Process_FolderExplorer_MoveBottomRight
 1. Test_Process_FolderExplorer_MoveTopRight
 
-### ARCHITECTURE REQUIREMENTS
+### Architecture Requirements
 
 A standard UiPath, Studio to Orchestrator cloud setup is the base of operation.  It is easy to setup and free.
 1. An Orchestrator connection - Visit https://cloud.uipath.com/ and authenticate or sign up.
 2. [UiPath Studio](https://www.uipath.com/product/studio) is used to run the robot.  Note that Studio Web can be used directly in Orchestrator but I recommend installing the Studio IDE application.
 
-### GIT NOTES
+### Git Notes
 
 Clone the project to develop or change it.
 
 `git clone https://github.com/Academy-Project-ComputerStartup`
 
-### LINKS
+### Links
 - [UiPath Automation Platform](https://www.uipath.com/)
 - [UiPath Studio](https://www.uipath.com/product/studio)
 - [Shon Harsh Website 127.0.0.1](https://shonharsh.github.io/curriculum-vitae/index.html)
