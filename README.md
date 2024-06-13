@@ -1,4 +1,4 @@
-![Academy](https://shonharsh.github.io/curriculum-vitae/Images/banner-academy-mortgage.png)
+![Banner](Data/Images/Banner-Academy-Mortgage.png)
 
 # Academy-Project-ComputerStartup
 
