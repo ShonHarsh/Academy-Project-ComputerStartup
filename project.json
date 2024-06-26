@@ -4,9 +4,9 @@
   "description": "A bot to start processes on a computer.",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.System.Activities": "[24.3.0]",
-    "UiPath.Testing.Activities": "[24.4.0-preview]",
-    "UiPath.UIAutomation.Activities": "[24.2.2-preview]"
+    "UiPath.System.Activities": "[24.10.0]",
+    "UiPath.Testing.Activities": "[24.10.0]",
+    "UiPath.UIAutomation.Activities": "[24.10.1]"
   },
   "webServices": [],
   "entitiesStores": [],
