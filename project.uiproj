@@ -1,0 +1,6 @@
+{
+  "Name": "Academy-Project-ComputerStartup",
+  "ProjectType": "Process",
+  "Description": "A bot to start processes on a computer.",
+  "MainFile": "Main.xaml"
+}
