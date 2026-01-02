@@ -4,9 +4,9 @@
   "description": "A bot to start processes on a computer.",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.System.Activities": "[24.10.0]",
-    "UiPath.Testing.Activities": "[24.10.0]",
-    "UiPath.UIAutomation.Activities": "[24.10.1]"
+    "UiPath.System.Activities": "[25.10.5]",
+    "UiPath.Testing.Activities": "[25.10.0]",
+    "UiPath.UIAutomation.Activities": "[25.10.24]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -35,7 +35,6 @@
     "projectProfile": "Developement",
     "outputType": "Process",
     "libraryOptions": {
-      "includeOriginalXaml": false,
       "privateWorkflows": []
     },
     "processOptions": {
